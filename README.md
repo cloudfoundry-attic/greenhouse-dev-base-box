@@ -2,6 +2,8 @@
 
 ### Usage
 
+export WIN2012_KEY=Some-Key-From-MSDN;
+
 To make for both VirtualBox and VMWare:
 
 ```sh
