@@ -1,6 +1,6 @@
 vmware:
 	git co answer_files/2012_r2/
-	@rm -Rf iso/other
+	@rm iso/other/ReSharper.exe
 	@mkdir -p iso/other
 	@[ -f iso/other/ReSharper.exe ] || curl -L -o "iso/other/ReSharper.exe" -C - "https://download.jetbrains.com/resharper/JetBrains.ReSharperUltimate.2015.1.1.exe"
 	sed -i.bak -e 's/WIN2012_KEY/'$$WIN2012_KEY'/' answer_files/2012_r2/Autounattend.xml
@@ -8,7 +8,7 @@ vmware:
 
 virtualbox:
 	git co answer_files/2012_r2/
-	@rm -Rf iso/other
+	@rm iso/other/ReSharper.exe
 	@mkdir -p iso/other
 	@[ -f iso/other/ReSharper.exe ] || curl -L -o "iso/other/ReSharper.exe" -C - "https://download.jetbrains.com/resharper/JetBrains.ReSharperUltimate.2015.1.1.exe"
 	sed -i.bak -e 's/WIN2012_KEY/'$$WIN2012_KEY'/' answer_files/2012_r2/Autounattend.xml
