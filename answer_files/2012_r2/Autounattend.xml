@@ -65,7 +65,7 @@
                 <ProductKey>
                     <!-- Do not uncomment the Key element if you are using trial ISOs -->
                     <!-- You must uncomment the Key element (and optionally insert your own key) if you are using retail or volume license ISOs -->
-                    <Key>WIN_2012_KEY</Key>
+                    <Key>WIN2012_KEY</Key>
                     <WillShowUI>OnError</WillShowUI>
                 </ProductKey>
                 <AcceptEula>true</AcceptEula>
