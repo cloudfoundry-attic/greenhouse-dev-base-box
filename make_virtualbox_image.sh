@@ -51,7 +51,7 @@ fi
 
 git co answer_files/2012_r2/
 echo "Cleaning up Resharper artifacts..."
-rm iso/other/ReSharper.exe
+rm -f iso/other/ReSharper.exe
 mkdir -p iso/other
 echo "Downloading Resharper..."
 [ -f iso/other/ReSharper.exe ] || curl -L -o "iso/other/ReSharper.exe" -C - "https://download.jetbrains.com/resharper/JetBrains.ReSharperUltimate.2015.1.1.exe"
