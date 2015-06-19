@@ -2,7 +2,7 @@
 cd \
 handle c:\windows\temp
 
-rmdir /Q /R c:\windows\temp
+rmdir /q /s c:\windows\temp
 
 ::Some shit can't be deleted because Windows
 exit /b 0
