@@ -9,7 +9,7 @@ virtualbox: replace_key isos
 
 isos:
 	@mkdir -p iso/other
-	@[ -f iso/other/ReSharper.exe ] || curl -L -o "iso/other/ReSharper.exe" -C - https://download.jetbrains.com/resharper/ReSharperAndToolsPacked01Update1.exe
+@[ -f iso/other/ReSharper.exe ] || curl -L -o "iso/other/ReSharper.exe" -C - https://download.jetbrains.com/resharper/ReSharperAndToolsPacked02Update1.exe
 
 replace_key:
-	sed -i.bak -e 's/<Key>.*<\/Key>/<Key>'$$WIN2012_KEY'<\/Key>/' answer_files/2012_r2/Autounattend.xml
+	sed -i.bak -e 's/WIN2012_KEY/'$$WIN2012_KEY'/' answer_files/2012_r2/Autounattend.xml
