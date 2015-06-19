@@ -2,9 +2,9 @@
     "builders": [
         {
             "type": "vmware-iso",
-            "iso_url": "./iso/windows/windows2012trial.iso",
-            "iso_checksum_type": "md5",
-            "iso_checksum": "458ff91f8abc21b75cb544744bf92e6a",
+            "iso_url": "./iso/windows/en_windows_server_2012_r2_x64_dvd_2707946.iso",
+            "iso_checksum_type": "sha1",
+            "iso_checksum": "b6f063436056510357cb19cb77db781ed9c11df3",
             "headless": false,
             "boot_wait": "2m",
             "ssh_username": "vagrant",
@@ -36,9 +36,9 @@
         },
         {
             "type": "virtualbox-iso",
-            "iso_url": "./iso/windows/windows2012trial.iso",
-            "iso_checksum_type": "md5",
-            "iso_checksum": "458ff91f8abc21b75cb544744bf92e6a",
+            "iso_url": "./iso/windows/en_windows_server_2012_r2_x64_dvd_2707946.iso",
+            "iso_checksum_type": "sha1",
+            "iso_checksum": "b6f063436056510357cb19cb77db781ed9c11df3",
             "headless": false,
             "boot_wait": "2m",
             "ssh_username": "vagrant",
