@@ -15,7 +15,7 @@ then
   exit -1
 fi
 
-if [[ ! "$(packer version)" = "Packer v0.7.5" ]]
+if [[ ! "$(packer version | sed -n '1p')" = "Packer v0.7.5" ]]
 then
   echo "Only known to work with packer version 0.7.5"
   exit -1
