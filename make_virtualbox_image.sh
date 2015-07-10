@@ -21,7 +21,8 @@ then
   exit -1
 fi
 
-if [[ ! -f iso/windows/en_windows_server_2012_r2_x64_dvd_2707946.iso ]];
+
+if [[ ! -f iso/windows/en_windows_server_2012_r2_with_update_x64_dvd_6052708.iso ]];
 then
   echo "Windows 2012 ISO doesn't exist in iso/windows. Please copy it in there if you haven't done so. Thank you!"
   echo "Try https://msdn.microsoft.com/subscriptions/json/GetDownloadRequest?brand=MSDN&locale=en-us&fileId=62611&activexDisabled=true&akamaiDL=false"
@@ -31,7 +32,7 @@ fi
 
 
 echo "Verifying Windows 2012 ISO..."
-if [[ ! "$(openssl sha1 iso/windows/en_windows_server_2012_r2_x64_dvd_2707946.iso  | awk '{print $2}')" = "865494E969704BE1C4496D8614314361D025775E" ]]
+if [[ ! "$(openssl sha1 iso/windows/en_windows_server_2012_r2_with_update_x64_dvd_6052708.iso  | awk '{print $2}')" = "865494e969704be1c4496d8614314361d025775e" ]]
 then
   echo "Unexpected sha1 for Windows 2012 ISO. Check that you put it in iso/windows and that it is the correct version."
   echo "Try https://msdn.microsoft.com/subscriptions/json/GetDownloadRequest?brand=MSDN&locale=en-us&fileId=62611&activexDisabled=true&akamaiDL=false"
