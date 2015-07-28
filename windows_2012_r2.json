@@ -68,6 +68,30 @@
                     "{{.Name}}",
                     "--cpus",
                     "2"
+                ],
+                [
+                  "storagectl",
+                  "{{.Name}}",
+                  "--name",
+                  "satacontroller",
+                  "--add",
+                  "sata",
+                  "--controller",
+                  "intelahci"
+                ],
+                [
+                  "storageattach",
+                  "{{.Name}}",
+                  "--storagectl",
+                  "satacontroller",
+                  "--port",
+                  "0",
+                  "--device",
+                  "0",
+                  "--type",
+                  "dvddrive",
+                  "--medium",
+                  "./iso/en_visual_studio_ultimate_2013_with_update_4_x86_dvd_5935075.iso"
                 ]
             ]
         }

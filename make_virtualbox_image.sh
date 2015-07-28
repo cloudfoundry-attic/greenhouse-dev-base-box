@@ -40,9 +40,9 @@ then
   exit -1
 fi
 
-if [[ ! -f iso/other/en_visual_studio_ultimate_2013_with_update_4_x86_dvd_5935075.iso ]];
+if [[ ! -f iso/en_visual_studio_ultimate_2013_with_update_4_x86_dvd_5935075.iso ]];
 then
-  echo "Visual Studio ISO doesn't exist in iso/other. Please copy it in there if you haven't done so."
+  echo "Visual Studio ISO doesn't exist in iso. Please copy it in there if you haven't done so."
   echo "Try https://msdn.microsoft.com/subscriptions/json/GetDownloadRequest?brand=MSDN&locale=en-us&fileId=61638&activexDisabled=true&akamaiDL=false"
   echo "Cya!!"
   exit -1
@@ -50,9 +50,9 @@ fi
 
 
 echo "Verifying Visual Studio ISO..."
-if [[ ! "$(openssl sha1 iso/other/en_visual_studio_ultimate_2013_with_update_4_x86_dvd_5935075.iso  | awk '{print $2}')" = "62c2f1500924e7b1402b6fcb9350ae9e0af444f9" ]]
+if [[ ! "$(openssl sha1 iso/en_visual_studio_ultimate_2013_with_update_4_x86_dvd_5935075.iso  | awk '{print $2}')" = "62c2f1500924e7b1402b6fcb9350ae9e0af444f9" ]]
 then
-  echo "Unexpected sha1 for Visual Studio ISO. Check that you put it in iso/other and that it is the correct version. Thanks!"
+  echo "Unexpected sha1 for Visual Studio ISO. Check that you put it in iso and that it is the correct version. Thanks!"
   echo "Try https://msdn.microsoft.com/subscriptions/json/GetDownloadRequest?brand=MSDN&locale=en-us&fileId=61638&activexDisabled=true&akamaiDL=false"
   echo "Have a wonderful day!!!1!"
   exit -1
