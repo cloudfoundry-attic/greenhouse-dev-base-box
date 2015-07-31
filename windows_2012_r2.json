@@ -127,6 +127,7 @@
                 "./scripts/dis-updates.ps1",
                 "./scripts/workstation-features.ps1",
                 "./scripts/fonts.ps1",
+                "./scripts/download-vs.ps1",
                 "./scripts/vs-pi.ps1",
                 "./scripts/extra-dev-tools.ps1"
             ]
